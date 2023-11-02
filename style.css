@@ -392,3 +392,46 @@ nav {
   font-size: 2rem;
   color: rgba(0, 0, 255, 0.715);
 }
+
+/* section footer */
+
+.footer-container {
+  display: flex;
+  align-items: center;
+}
+
+.footer-right {
+  flex-basis: 60%;
+}
+.footer-left {
+  flex-basis: 40%;
+}
+.footer-left img {
+  width: 100%;
+}
+.media img {
+  width: 10rem;
+}
+
+.form {
+  max-width: 40rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.form input,
+button {
+  padding: 1.2rem;
+  margin-top: 1rem;
+  border-radius: 1rem;
+  border: none;
+}
+
+.form h3 {
+  color: white;
+  font-size: 1.8rem;
+  text-align: center;
+}
+.footer {
+  background-color: var(--secondaryColor);
+}
