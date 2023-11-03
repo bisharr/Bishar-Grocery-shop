@@ -395,9 +395,15 @@ nav {
 
 /* section footer */
 
+.footer {
+  background-color: var(--primaryColor);
+  margin-top: 4rem;
+}
+
 .footer-container {
   display: flex;
   align-items: center;
+  gap: 1rem;
 }
 
 .footer-right {
@@ -405,18 +411,22 @@ nav {
 }
 .footer-left {
   flex-basis: 40%;
+  padding-right: 1rem;
 }
 .footer-left img {
   width: 100%;
+  border-radius: 1rem;
 }
 .media img {
-  width: 10rem;
+  width: 13rem;
+  border-radius: 1rem;
 }
 
 .form {
   max-width: 40rem;
   display: flex;
   flex-direction: column;
+  margin: 0 auto;
 }
 
 .form input,
@@ -432,6 +442,46 @@ button {
   font-size: 1.8rem;
   text-align: center;
 }
-.footer {
-  background-color: var(--secondaryColor);
+
+.footer-right {
+  background-image: linear-gradient(
+      rgba(2, 3, 29, 0.83),
+      rgba(128, 39, 67, 0.331)
+    ),
+    url(hero-section/young\ girl.jpeg);
+  background-size: cover;
+  padding: 8.2rem;
+  border-radius: 1.2rem;
+}
+
+.media {
+  margin-top: 3rem;
+
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+
+  justify-content: center;
+}
+
+.media .media-icon {
+  font-size: 2.4rem;
+  color: var(--primaryColor);
+  transition: all 0.3s ease-in;
+}
+.media-icon:hover {
+  color: var(--secondaryColor);
+  transform: scale(1.2);
+}
+
+.copy-righ {
+  background-color: #04010e;
+  width: 100%;
+  padding: 2rem;
+}
+.copy-righ p {
+  color: #fff;
+  font-size: 2.4rem;
+  text-align: center;
+  text-transform: uppercase;
 }
