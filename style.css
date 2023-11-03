@@ -446,12 +446,12 @@ button {
   position: relative;
 }
 .eye {
-  font-size: 2.6rem;
   color: #04010e;
   position: absolute;
-  top: 13.6rem;
-  right: 4rem;
+  top: 13rem;
+  right: 3rem;
   cursor: pointer;
+  padding: 1rem;
 }
 .form input:focus {
   border: 0.3rem solid dodgerblue;
