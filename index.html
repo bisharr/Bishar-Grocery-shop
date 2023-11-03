@@ -22,7 +22,7 @@
             <li><a href="#price">Price</a></li>
             <li><a href="#lookslike">HowLooks</a></li>
 
-            <li><a href="#">Sign Up</a></li>
+            <li><a href="#footer">Sign Up</a></li>
           </ul>
         </div>
       </nav>
@@ -1410,15 +1410,33 @@
 
     <!-- section footer -->
 
-    <section class="footer">
+    <section id="footer" class="footer">
       <h2 class="price-title">To have acount is a fun</h2>
       <div class="footer-container">
         <div class="footer-right">
           <form class="form">
             <h3>Sign Up</h3>
-            <input type="text" placeholder="Your Full Name" />
-            <input type="email" placeholder="Your Gmail" />
-            <input type="password" placeholder="Password" />
+            <input
+              class="input"
+              type="text"
+              placeholder="Your Full Name"
+              required
+            />
+            <input
+              class="input"
+              type="email"
+              placeholder="Your Gmail"
+              required
+            />
+
+            <input
+              class="input passward"
+              type="password"
+              placeholder="Password"
+              required
+            />
+            <ion-icon class="eye" name="eye-outline"></ion-icon>
+
             <!-- <button class="small-btn">Already have an acount</button> -->
             <button class="form-btn">Singn in</button>
           </form>

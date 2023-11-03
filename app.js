@@ -17,3 +17,10 @@ const btnless2 = function () {
 btnClickEl.addEventListener('click', feuturingEl);
 
 btnlessEl.addEventListener('click', btnless2);
+
+const eyeEl = document.querySelector('.eye');
+const PasswordInput = document.querySelector('.passward');
+
+eyeEl.addEventListener('click', function () {
+  const passwordvalue = PasswordInput.value;
+});

@@ -427,6 +427,7 @@ nav {
   display: flex;
   flex-direction: column;
   margin: 0 auto;
+  position: relative;
 }
 
 .form input,
@@ -435,6 +436,25 @@ button {
   margin-top: 1rem;
   border-radius: 1rem;
   border: none;
+  outline: none;
+  cursor: pointer;
+}
+.input {
+  box-shadow: 1rem 1rem 1rem rgba(12, 214, 106, 0.572);
+}
+.passward {
+  position: relative;
+}
+.eye {
+  font-size: 2.6rem;
+  color: #04010e;
+  position: absolute;
+  top: 13.6rem;
+  right: 4rem;
+  cursor: pointer;
+}
+.form input:focus {
+  border: 0.3rem solid dodgerblue;
 }
 
 .form h3 {
@@ -468,6 +488,7 @@ button {
   font-size: 2.4rem;
   color: var(--primaryColor);
   transition: all 0.3s ease-in;
+  cursor: pointer;
 }
 .media-icon:hover {
   color: var(--secondaryColor);
