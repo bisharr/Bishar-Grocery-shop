@@ -19,6 +19,7 @@ body {
   font-family: 'inter', sans-serif;
   overflow-x: hidden;
   background-color: #04010e;
+  box-sizing: border-box;
 }
 .section-hero {
   /* max-width: 100%; */
@@ -446,12 +447,12 @@ button {
   position: relative;
 }
 .eye {
-  color: #04010e;
   position: absolute;
   top: 13rem;
   right: 3rem;
   cursor: pointer;
   padding: 1rem;
+  width: 4.5rem;
 }
 .form input:focus {
   border: 0.3rem solid dodgerblue;

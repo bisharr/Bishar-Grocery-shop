@@ -18,9 +18,26 @@ btnClickEl.addEventListener('click', feuturingEl);
 
 btnlessEl.addEventListener('click', btnless2);
 
-const eyeEl = document.querySelector('.eye');
+const eyeCloseEl = document.querySelector('.eye-close');
+const eyeOpenEl = document.querySelector('.eye-open');
 const PasswordInput = document.querySelector('.passward');
 
-eyeEl.onchange = function (e) {
-  PasswordInput.type = chk.checked ? 'text' : 'password';
+eyeOpenEl.onclick = function () {
+  if (PasswordInput.type == 'password') {
+    PasswordInput.type = 'text';
+    eyeCloseEl.classList.remove('hide');
+    eyeOpenEl.classList.add('hide');
+  } else {
+    PasswordInput.type = 'password';
+    eyeCloseEl.classList.remove('hide');
+  }
+};
+eyeCloseEl.onclick = function () {
+  if (PasswordInput.type == 'text') {
+    eyeCloseEl.classList.add('hide');
+    eyeOpenEl.classList.remove('hide');
+    PasswordInput.type = 'password';
+  } else {
+    PasswordInput.type = 'text';
+  }
 };
