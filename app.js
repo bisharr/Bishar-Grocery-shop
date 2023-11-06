@@ -18,26 +18,29 @@ btnClickEl.addEventListener('click', feuturingEl);
 
 btnlessEl.addEventListener('click', btnless2);
 
-const eyeCloseEl = document.querySelector('.eye-close');
+// const eyeCloseEl = document.querySelector('.eye-close');
 const eyeOpenEl = document.querySelector('.eye-open');
 const PasswordInput = document.querySelector('.passward');
 
+// eyeOpenEl.onclick = function () {
+//   if (PasswordInput.type == 'password') {
+//     PasswordInput.type = 'text';
+//     eyeCloseEl.classList.remove('hide');
+//     eyeOpenEl.classList.add('hide');
+//   } else {
+//     PasswordInput.type = 'password';
+//     eyeCloseEl.classList.remove('hide');
+//   }
+// };
 eyeOpenEl.onclick = function () {
   if (PasswordInput.type == 'password') {
+    // eyeCloseEl.classList.add('hide');
+    // eyeOpenEl.classList.remove('hide');
     PasswordInput.type = 'text';
-    eyeCloseEl.classList.remove('hide');
-    eyeOpenEl.classList.add('hide');
+    eyeOpenEl.src = 'eye-icon/eye-close.png';
   } else {
     PasswordInput.type = 'password';
-    eyeCloseEl.classList.remove('hide');
-  }
-};
-eyeCloseEl.onclick = function () {
-  if (PasswordInput.type == 'text') {
-    eyeCloseEl.classList.add('hide');
-    eyeOpenEl.classList.remove('hide');
-    PasswordInput.type = 'password';
-  } else {
-    PasswordInput.type = 'text';
+    eyeOpenEl.src = 'eye-icon/eye-open.png';
+    console.log(eyeOpenEl.src);
   }
 };
