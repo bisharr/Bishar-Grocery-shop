@@ -217,6 +217,30 @@ nav {
   padding-top: 2rem;
   text-align: center;
 }
+
+/* Price-section**** */
+.search-container {
+  max-width: 27rem;
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin-left: 9rem;
+  margin-top: 2rem;
+}
+.search-icon {
+  font-size: 2.4rem;
+  position: absolute;
+  right: 1rem;
+  color: #04010e79;
+}
+.search {
+  border-radius: 1rem;
+  width: 100%;
+  padding: 1.2rem 2rem;
+  outline: none;
+  border: none;
+  font-size: 1.6em;
+}
 .price-flex {
   display: flex;
   align-items: center;
