@@ -44,3 +44,34 @@ eyeOpenEl.onclick = function () {
     console.log(eyeOpenEl.src);
   }
 };
+const msg = document.getElementById('message');
+const str = document.getElementById('strenght');
+
+PasswordInput.addEventListener('input', function () {
+  const passwordValue = PasswordInput.value;
+  if (passwordValue.length > 0) {
+    msg.style.display = 'block';
+  } else {
+    msg.style.display = 'none';
+  }
+  if (passwordValue.length <= 4) {
+    str.innerHTML = 'Weak';
+    str.style.color = 'Red';
+    str.style.background = '#fff';
+    str.style.padding = '0.5rem 1rem';
+    PasswordInput.style.borderColor = 'red';
+  } else if (passwordValue.length > 4 && passwordValue.length <= 8) {
+    str.innerHTML = 'Mediuam';
+    // str.style.color = '#087f5b';
+    str.style.color = 'blue';
+    PasswordInput.style.borderColor = 'blue';
+    str.style.background = '#fff';
+    str.style.padding = '0.5rem 1rem';
+  } else if (passwordValue.length >= 8) {
+    str.innerHTML = 'Strong';
+
+    str.style.color = 'green';
+    PasswordInput.style.borderColor = 'green';
+    str.style.background = '#fff';
+  }
+});

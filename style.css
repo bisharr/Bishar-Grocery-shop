@@ -21,9 +21,10 @@ body {
   background-color: #04010e;
   box-sizing: border-box;
   position: relative;
+  width: 100vw;
 }
 .section-hero {
-  /* max-width: 100%; */
+  width: 100%;
 }
 
 .logo {
@@ -473,6 +474,12 @@ button {
 }
 .passward {
   position: relative;
+}
+#message {
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 600;
+  display: none;
 }
 .eye {
   position: absolute;
