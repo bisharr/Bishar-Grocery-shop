@@ -25,6 +25,7 @@ body {
 }
 .section-hero {
   width: 100%;
+  background: var(--primaryColor);
 }
 
 .logo {
@@ -66,9 +67,9 @@ nav {
 
 .hero-images {
   display: flex;
-  padding: 4.5rem 5rem;
-  gap: 2rem;
-  background-color: var(--primaryColor);
+  padding: 2.5rem 1rem;
+
+  gap: 1rem;
 }
 .image-1 {
   flex-basis: 60%;
@@ -85,6 +86,9 @@ nav {
 .image-2 {
   flex-basis: 40%;
   margin-top: 2.1rem;
+  width: 100%;
+  height: 100%;
+  max-width: 80rem;
 }
 .image-2 img {
   width: 100%;
@@ -129,7 +133,8 @@ nav {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 12rem;
+  margin-top: 6rem;
+  margin-bottom: 3rem;
 }
 
 .btn {
@@ -541,4 +546,22 @@ button {
   font-size: 2.4rem;
   text-align: center;
   text-transform: uppercase;
+}
+@media (max-width: 1120px) {
+  .image-2 {
+    display: none;
+  }
+  .hero-images {
+    padding: 0;
+  }
+  .image-1 {
+    flex-basis: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .hero-text-advertisement {
+    max-width: 70rem;
+  }
 }

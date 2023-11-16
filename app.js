@@ -54,6 +54,7 @@ PasswordInput.addEventListener('input', function () {
   } else {
     msg.style.display = 'none';
   }
+
   if (passwordValue.length <= 4) {
     str.innerHTML = 'Weak';
     str.style.color = 'Red';
