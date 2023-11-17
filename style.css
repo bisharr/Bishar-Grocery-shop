@@ -445,7 +445,7 @@ nav {
   flex-basis: 60%;
 }
 .footer-left {
-  flex-basis: 40%;
+  max-width: 60rem;
   padding-right: 1rem;
 }
 .footer-left img {
@@ -563,5 +563,25 @@ button {
   }
   .hero-text-advertisement {
     max-width: 70rem;
+  }
+  .right {
+    font-size: 2rem;
+  }
+  .phone-class {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.4rem;
+  }
+  .phone-icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .prices {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .dispear {
+    display: none;
   }
 }
