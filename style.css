@@ -89,6 +89,7 @@ nav {
 
   border-radius: 2rem;
   height: 100%;
+  width: 100%;
 }
 .image-2 {
   margin-top: 2.1rem;
@@ -164,7 +165,7 @@ nav {
 
 .testimonial-section {
   background: var(--secondaryColor);
-  margin: 6rem auto;
+  /* margin: 6rem auto; */
   width: 100%;
 }
 
@@ -597,5 +598,15 @@ button {
 }
 @media (max-width: 850px) {
   .testimonials {
+    display: block;
+  }
+  .prices {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .footer-right {
+    flex-basis: 100%;
+  }
+  .footer-left {
+    display: none;
   }
 }
