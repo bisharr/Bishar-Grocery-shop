@@ -19,16 +19,17 @@ body {
   font-family: 'inter', sans-serif;
 
   background-color: #04010e;
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
   position: relative;
   /* width: 100vw; */
 }
 
-.clear-fix::after {
+/* .clear-fix::after {
   content: '';
   clear: both;
   display: table;
-}
+} */
+
 .section-hero {
   width: 100%;
   background: var(--primaryColor);
@@ -88,7 +89,7 @@ nav {
   color: #fff;
 
   border-radius: 2rem;
-  height: 100%;
+
   width: 100%;
 }
 .image-2 {
@@ -233,6 +234,7 @@ nav {
 .testimonials {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  width: 100%;
 }
 .testimonials-text {
   background-color: var(--primaryColor);
@@ -289,6 +291,7 @@ nav {
 
 .item-prices img {
   width: 100%;
+  height: 15.5rem;
   transition: all 0.5s;
 }
 .item-prices img:hover {
