@@ -76,3 +76,20 @@ PasswordInput.addEventListener('input', function () {
     str.style.background = '#fff';
   }
 });
+
+// Featuring Mobile Nav ********
+
+const showMenuEl = document.querySelector('.show-btn');
+const hideMenuEl = document.querySelector('.hide-btn');
+const NavEl = document.querySelector('.navigation ul');
+
+showMenuEl.addEventListener('click', function () {
+  showMenuEl.classList.toggle('hide');
+  hideMenuEl.classList.toggle('hide');
+  NavEl.style.transform = 'translateX(0)';
+});
+hideMenuEl.addEventListener('click', function () {
+  showMenuEl.classList.toggle('hide');
+  hideMenuEl.classList.toggle('hide');
+  NavEl.style.transform = 'translateX(30rem)';
+});
