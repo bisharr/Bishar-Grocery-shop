@@ -53,11 +53,26 @@ body {
   font-size: 2rem;
   font-weight: 700;
   transition: all 0.5s;
+  position: relative;
 }
-.navigation ul li a:hover {
+.navigation ul li a::before {
+  content: '';
+  width: 0;
+  height: 0.3rem;
+  background-color: var(--secondaryColor);
+  left: 0;
+  bottom: -0.3rem;
+  border-radius: 1rem;
+  position: absolute;
+  transition: all 0.3s ease;
+}
+.navigation ul li a:hover::before {
+  width: 100%;
+}
+/* .navigation ul li a:hover {
   border-bottom: 0.2rem solid var(--secondaryColor);
   color: var(--secondaryColor);
-}
+} */
 
 nav {
   display: flex;
@@ -112,6 +127,10 @@ nav {
   text-align: center;
 
   color: #fff;
+}
+section {
+  overflow: hidden;
+  width: 100%;
 }
 .hero-text-div {
   width: 65rem;
@@ -631,5 +650,11 @@ button {
     margin-top: 4rem;
     margin-bottom: 3rem;
     border: none;
+  }
+}
+
+@media (max-width: 720px) {
+  html {
+    font-size: 50%;
   }
 }
