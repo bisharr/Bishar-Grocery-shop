@@ -126,6 +126,48 @@ section {
 .hero-text-div {
   width: 65rem;
   margin-top: 16rem;
+  animation-name: movetodown;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-out;
+  animation-delay: 0.75s;
+}
+
+@keyframes movetodown {
+  0% {
+    opacity: 0;
+    transform: translateY(-20rem);
+  }
+  80% {
+    transform: translateY(5rem);
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes moveintomiddle {
+  0% {
+    opacity: 0;
+    transform: translateY(10rem);
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes movetoUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20rem);
+  }
+  80% {
+    transform: translateY(-5rem);
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
 .hero-text-translate {
@@ -135,6 +177,10 @@ section {
   padding: 0 1rem;
   margin-left: 4rem;
   display: inline-block;
+  animation-name: moveintomiddle;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-out;
+  animation-delay: 1.5s;
 }
 
 .hero-text-advertisement {
@@ -145,6 +191,10 @@ section {
   border-radius: 1.2rem;
   padding: 2.5rem 2rem;
   margin: 8rem 1rem 0 1rem;
+  animation-name: movetoUp;
+  animation-duration: 1.5s;
+  animation-delay: 0.75s;
+  animation-timing-function: ease-in;
 }
 .div-btn {
   width: 100%;
@@ -263,6 +313,7 @@ section {
 /* Price-section**** */
 .section-price {
   width: 100%;
+  padding: 2rem 4rem;
 }
 .search-container {
   max-width: 27rem;
