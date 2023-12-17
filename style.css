@@ -222,6 +222,20 @@ section {
   background-color: var(--secondaryColor);
 }
 
+/******* BackgroundImages text *******/
+.margin-bottom {
+  margin-bottom: 6rem;
+  margin-top: 3rem;
+  background-image: linear-gradient(to right, #fff, black);
+  display: inline-block;
+  -webkit-background-clip: text;
+  color: transparent;
+  font-size: 3.2rem;
+}
+.tex-center {
+  text-align: center;
+}
+
 /* Testimonial-section */
 
 .testimonial-section {
@@ -471,6 +485,12 @@ section {
 .how-it-looks video {
   width: 100%;
   border-radius: 2rem;
+  outline-offset: 1.2rem;
+  transition: all 0.3s;
+}
+.how-it-looks video:hover {
+  transform: scale(0.95);
+  outline: 1rem solid var(--primaryColor);
 }
 
 .how-it-looks p {
@@ -496,6 +516,8 @@ section {
 .visit {
   text-align: center;
   font-size: 1.6rem;
+  letter-spacing: 6px;
+  font-weight: 800;
 }
 .email {
   font-size: 2rem;
@@ -617,10 +639,13 @@ button {
   color: var(--primaryColor);
   transition: all 0.3s ease-in;
   cursor: pointer;
+  border-radius: 50%;
+  outline-offset: 0.2rem;
 }
 .media-icon:hover {
   color: var(--secondaryColor);
   transform: scale(1.2);
+  outline: 0.2rem solid var(--primaryColor);
 }
 
 .copy-righ {
