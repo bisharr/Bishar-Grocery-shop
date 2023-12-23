@@ -788,18 +788,44 @@ section {
   display: flex;
   align-items: center;
   gap: 1rem;
+  padding: 5rem 2rem;
 }
 
 .footer-right {
   flex-basis: 60%;
 }
 .footer-left {
+  position: relative;
   max-width: 60rem;
   padding-right: 1rem;
 }
-.footer-left img {
-  width: 100%;
-  border-radius: 1rem;
+
+.img-footer {
+  position: absolute;
+  width: 25rem;
+  height: 20rem;
+  outline-offset: 1rem;
+  transition: all 0.4s;
+}
+.img-footer-1 {
+  top: -7rem;
+  right: -47rem;
+}
+.img-footer-2 {
+  top: -16rem;
+  left: 9rem;
+}
+.img-footer-3 {
+  top: 6rem;
+  right: -41rem;
+}
+.img-footer:hover {
+  transform: scale(1.1);
+  z-index: 10;
+  outline: 0.8rem solid var(--secondaryColor);
+}
+.img-footer:hover.img-footer:not(:hover) {
+  transform: scale(0.8);
 }
 .media img {
   width: 13rem;
