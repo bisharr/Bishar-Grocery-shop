@@ -282,6 +282,7 @@ section {
   /* margin: 6rem auto; */
   width: 100%;
   position: relative;
+  padding: 10rem 3rem;
 }
 .bg-video {
   position: absolute;
@@ -382,7 +383,7 @@ section {
 /* Price-section**** */
 .section-price {
   width: 100%;
-  padding: 2rem 4rem;
+  padding: 10rem 3rem;
 }
 .search-container {
   max-width: 27rem;
@@ -520,7 +521,7 @@ section {
 .container-features {
   background-color: var(--primaryColor);
   max-width: 140rem;
-  padding: 9rem 2rem;
+  padding: 10rem 3rem;
 }
 .row-features {
   display: grid;
@@ -714,6 +715,7 @@ section {
   background-color: var(--secondaryColor);
   margin: 0 auto;
   margin-bottom: 2rem;
+  padding: 10rem 3rem;
 }
 
 .looks {
@@ -790,6 +792,7 @@ section {
 .footer {
   background-color: var(--primaryColor);
   margin-top: 4rem;
+  padding: 10rem 3rem;
 }
 
 .footer-container {
@@ -810,10 +813,12 @@ section {
 
 .img-footer {
   position: absolute;
-  width: 25rem;
+  width: 27rem;
   height: 20rem;
   outline-offset: 1rem;
   transition: all 0.4s;
+  border-radius: 2px;
+  overflow: hidden;
 }
 .img-footer-1 {
   top: -7rem;
@@ -822,10 +827,12 @@ section {
 .img-footer-2 {
   top: -16rem;
   left: 9rem;
+  z-index: 1;
 }
 .img-footer-3 {
   top: 6rem;
   right: -41rem;
+  z-index: 2;
 }
 .img-footer:hover {
   transform: scale(1.1);
