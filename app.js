@@ -82,6 +82,8 @@ PasswordInput.addEventListener('input', function () {
 const showMenuEl = document.querySelector('.show-btn');
 const hideMenuEl = document.querySelector('.hide-btn');
 const NavEl = document.querySelector('.navigation ul');
+const OverFlowEl = document.querySelector('.overFlow');
+const bgvideoEl = document.querySelector('.testimonial-section');
 
 showMenuEl.addEventListener('click', function () {
   showMenuEl.classList.toggle('hide');
@@ -89,6 +91,18 @@ showMenuEl.addEventListener('click', function () {
   NavEl.style.transform = 'translateX(0)';
 });
 hideMenuEl.addEventListener('click', function () {
+  showMenuEl.classList.toggle('hide');
+  hideMenuEl.classList.toggle('hide');
+  NavEl.style.transform = 'translateX(30rem)';
+});
+
+OverFlowEl.addEventListener('click', function () {
+  showMenuEl.classList.toggle('hide');
+  hideMenuEl.classList.toggle('hide');
+  NavEl.style.transform = 'translateX(30rem)';
+});
+
+bgvideoEl.addEventListener('click', function () {
   showMenuEl.classList.toggle('hide');
   hideMenuEl.classList.toggle('hide');
   NavEl.style.transform = 'translateX(30rem)';

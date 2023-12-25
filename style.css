@@ -20,6 +20,14 @@ body {
   background-color: #04010e;
   position: relative;
 }
+.overFlow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
 
 .section-hero {
   width: 100%;
@@ -929,7 +937,7 @@ button {
   position: absolute;
   top: 3rem;
   right: 2rem;
-  font-size: 4rem;
+  font-size: 5rem;
   display: none;
 }
 @media (max-width: 1120px) {
@@ -1020,13 +1028,14 @@ button {
     flex-direction: column;
     position: absolute;
     padding: 2rem 1rem;
-    border-radius: 1rem;
+    /* border-radius: 1rem; */
     row-gap: 5rem;
     top: 10rem;
-    right: 0;
+    right: -1rem;
     height: 100vh;
     align-items: center;
-    width: 35%;
+    width: 37%;
+    /* background-image: linear-gradient(to bottom, #087f5bf3, #f59f00d3); */
     background-color: #087f5bf3;
     line-height: 2;
     transform: translateX(30rem);
