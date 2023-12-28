@@ -962,9 +962,13 @@ button {
   font-size: 5rem;
   display: none;
 }
+
 @media (max-width: 1120px) {
   .image-2 {
     display: none;
+  }
+  .logo {
+    max-width: 23rem;
   }
   .hero-images {
     padding: 0;
@@ -1004,6 +1008,9 @@ button {
   .testimonials {
     display: block;
   }
+  .logo {
+    max-width: 20rem;
+  }
 
   .prices {
     grid-template-columns: repeat(3, 1fr);
@@ -1031,6 +1038,9 @@ button {
     grid-template-columns: repeat(2, 1fr);
     row-gap: 3rem;
   }
+  .navigation ul li a {
+    font-size: 1.8rem;
+  }
 }
 
 @media (max-width: 720px) {
@@ -1043,6 +1053,9 @@ button {
     right: 3rem;
     cursor: pointer;
     transform: translate(0%, 0%);
+  }
+  .navigation ul li a {
+    font-size: 1.6rem;
   }
 }
 @media (max-width: 450px) {
@@ -1065,8 +1078,7 @@ button {
     transform: translate(0%, 0%);
   }
 }
-
-@media (max-width: 580px) {
+@media (max-width: 640px) {
   .navigation ul {
     display: flex;
     flex-direction: column;
@@ -1086,15 +1098,13 @@ button {
     box-shadow: 0 0 0.5rem 0 rgba(0, 0, 0, 0.644);
     transition: all 0.5s ease-in;
   }
+  #sign-up {
+    background-color: #f59f00;
+  }
 
   .navigation ul li a {
     font-size: 2.4rem;
     font-weight: 800;
-  }
-  .prices {
-    grid-template-columns: repeat(2, 1fr);
-    align-items: center;
-    justify-content: center;
   }
   .mobile-menu {
     display: block;
@@ -1103,11 +1113,23 @@ button {
   .btnless {
     margin: 2rem 13rem;
   }
+}
+
+@media (max-width: 580px) {
+  .prices {
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-content: center;
+  }
+
   .eye {
     position: absolute;
     top: 15rem;
     right: 3rem;
     cursor: pointer;
     transform: translate(0%, 19%);
+  }
+  .logo {
+    max-width: 13rem;
   }
 }
