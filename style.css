@@ -27,14 +27,15 @@ section {
   width: 100%;
   object-fit: cover;
 }
-.overFlow {
+/* .overFlow {
   position: absolute;
   top: 0;
   left: 0;
   height: 100%;
   width: 100%;
   overflow: hidden;
-}
+  z-index: -5;
+} */
 
 /* Section Home */
 
@@ -44,7 +45,9 @@ section {
 }
 
 .logo {
-  max-width: 25rem;
+  max-width: 27rem;
+  border-radius: 2rem;
+  overflow: hidden;
 }
 .logo img {
   width: 100%;
@@ -88,10 +91,22 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: var(--primaryColor);
+  /* background-color: var(--primaryColor); */
+
+  background-image: linear-gradient(
+      to right,
+      rgba(2, 3, 29, 0.904),
+      rgba(128, 39, 67, 0.781)
+    ),
+    url(hero-section/young\ girl.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+  object-fit: cover;
+
   padding: 1rem 0;
   height: 10rem;
-  border-bottom: 0.2rem solid #fff;
+  /* border-bottom: 0.2rem solid #fff; */
   position: fixed;
   width: 100%;
   z-index: 999;
@@ -184,8 +199,10 @@ nav {
 
 .hero-text-translate {
   font-size: 2.1rem;
-  color: var(--secondaryColor);
-  padding: 0 1rem;
+  background-color: var(--secondaryColor);
+  color: #e3e2e9;
+  padding: 1rem 2rem;
+  border-radius: 0.3rem;
   font-weight: 900;
   margin-left: 4rem;
   display: inline-block;
@@ -264,7 +281,7 @@ nav {
 .margin-bottom {
   margin-bottom: 6rem;
   margin-top: 3rem;
-  background-image: linear-gradient(to right, #fff, black);
+  background-image: linear-gradient(to right, #087f5bf5, rgba(0, 0, 0, 0.89));
   display: inline-block;
   -webkit-background-clip: text;
   color: transparent;
@@ -286,7 +303,7 @@ nav {
 /* Testimonial-section */
 
 .testimonial-section {
-  background-color: #087f5ba8;
+  background-color: #e3e2e99c;
   /* margin: 6rem auto; */
   width: 100%;
   position: relative;
@@ -301,7 +318,7 @@ nav {
   height: 100%;
   width: 100%;
   z-index: -2;
-  opacity: 0.18;
+  opacity: 0.5;
   overflow: hidden;
 }
 .bg-video-content {
@@ -424,22 +441,24 @@ nav {
 }
 .item-prices {
   margin: 2rem 2rem;
-  width: 17rem;
+  max-width: 20rem;
   border-radius: 1rem;
   overflow: hidden;
   box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.331);
+  /* background-color: rgba(0, 0, 0, 0.829); */
 }
 
 .item-prices img {
   width: 100%;
+  z-index: 4;
   height: 15.5rem;
   transition: all 0.5s;
 }
-.item-prices img:hover {
+.item-prices img {
   transform: scale(1.2);
 }
 .price-text {
-  background-color: var(--primaryColor);
+  /* background-color: var(--primaryColor); */
   padding: 2rem 0.7rem;
   color: #04010e;
   font-weight: 500;
@@ -483,7 +502,7 @@ nav {
   color: #fff;
 }
 .section-price {
-  /* background-color: #fff; */
+  /* background-color: var(--secondaryColor); */
   margin: 5rem auto;
 }
 
@@ -558,6 +577,17 @@ nav {
   text-align: center;
   box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.801);
 }
+.back {
+  transform: rotateY(-180deg);
+
+  align-items: center;
+}
+.col:hover .back {
+  transform: rotateY(0);
+}
+.col:hover .front {
+  transform: rotateY(180deg);
+}
 .detail {
   width: 80%;
   text-align: center;
@@ -581,11 +611,6 @@ nav {
   padding-top: 3rem;
 }
 
-.back {
-  transform: rotateY(-180deg);
-
-  align-items: center;
-}
 .back-1 {
   background-image: linear-gradient(to right bottom, #c92a2a, #b63b3bd2);
 }
@@ -601,12 +626,7 @@ nav {
 .front {
   background-color: var(--secondaryColor);
 }
-.col:hover .back {
-  transform: rotateY(0);
-}
-.col:hover .front {
-  transform: rotateY(180deg);
-}
+
 .img-back {
   height: 45%;
   background-size: cover;
@@ -722,7 +742,7 @@ nav {
 /* section-looks */
 
 .looks-section {
-  background-color: var(--secondaryColor);
+  background-color: #e3e2e9e7;
   margin: 0 auto;
   margin-bottom: 2rem;
   padding: 10rem 3rem;
@@ -732,11 +752,11 @@ nav {
   display: flex;
   align-items: center;
   gap: 1.2rem;
-  color: white;
+  color: #333;
   padding: 2rem 4rem;
 }
 .right {
-  border-left: 1rem solid #fff;
+  border-left: 1rem solid var(--secondaryColor);
 }
 
 .how-it-looks {
@@ -871,6 +891,7 @@ button {
   top: 13rem;
   right: 3rem;
   cursor: pointer;
+  transform: translate(0%, 0%);
   padding: 1rem;
   width: 4.5rem;
 }
@@ -1016,10 +1037,32 @@ button {
   html {
     font-size: 50%;
   }
+  .eye {
+    position: absolute;
+    top: 14rem;
+    right: 3rem;
+    cursor: pointer;
+    transform: translate(0%, 0%);
+  }
 }
 @media (max-width: 450px) {
   html {
     font-size: 38%;
+  }
+  .eye {
+    position: absolute;
+    top: 15rem;
+    right: 3rem;
+    cursor: pointer;
+    transform: translate(0%, 0%);
+  }
+}
+@media (max-width: 430px) {
+  .eye {
+    top: 12rem;
+    right: 3rem;
+    cursor: pointer;
+    transform: translate(0%, 0%);
   }
 }
 
@@ -1059,5 +1102,12 @@ button {
   .clickBtn,
   .btnless {
     margin: 2rem 13rem;
+  }
+  .eye {
+    position: absolute;
+    top: 15rem;
+    right: 3rem;
+    cursor: pointer;
+    transform: translate(0%, 19%);
   }
 }
