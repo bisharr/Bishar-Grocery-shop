@@ -82,8 +82,10 @@ PasswordInput.addEventListener('input', function () {
 const showMenuEl = document.querySelector('.show-btn');
 const hideMenuEl = document.querySelector('.hide-btn');
 const NavEl = document.querySelector('.navigation ul');
-const OverFlowEl = document.querySelector('.overFlow');
+const SectionsEl = document.querySelectorAll('section');
 const bgvideoEl = document.querySelector('.testimonial-section');
+
+console.log(SectionsEl);
 
 showMenuEl.addEventListener('click', function () {
   showMenuEl.classList.toggle('hide');
@@ -96,7 +98,7 @@ hideMenuEl.addEventListener('click', function () {
   NavEl.style.transform = 'translateX(30rem)';
 });
 
-OverFlowEl.addEventListener('click', function () {
+SectionsEl.addEventListener('click', function () {
   showMenuEl.classList.toggle('hide');
   hideMenuEl.classList.toggle('hide');
   NavEl.style.transform = 'translateX(30rem)';
